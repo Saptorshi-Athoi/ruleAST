@@ -1,0 +1,69 @@
+{
+    "type": "operator",
+    "left": {
+      "type": "operator",
+      "left": {
+        "type": "operator",
+        "left": {
+          "type": "operand",
+          "value": {
+            "field": "age",
+            "operator": ">",
+            "value": "30"
+          }
+        },
+        "right": {
+          "type": "operand",
+          "value": {
+            "field": "department",
+            "operator": "=",
+            "value": "'Sales'"
+          }
+        },
+        "value": "AND"
+      },
+      "right": {
+        "type": "operator",
+        "left": {
+          "type": "operand",
+          "value": {
+            "field": "age",
+            "operator": "<",
+            "value": "25"
+          }
+        },
+        "right": {
+          "type": "operand",
+          "value": {
+            "field": "department",
+            "operator": "=",
+            "value": "'Marketing'"
+          }
+        },
+        "value": "AND"
+      },
+      "value": "OR"
+    },
+    "right": {
+      "type": "operator",
+      "left": {
+        "type": "operand",
+        "value": {
+          "field": "salary",
+          "operator": ">",
+          "value": "50000"
+        }
+      },
+      "right": {
+        "type": "operand",
+        "value": {
+          "field": "experience",
+          "operator": ">",
+          "value": "5"
+        }
+      },
+      "value": "OR"
+    },
+    "value": "AND"
+  }
+  

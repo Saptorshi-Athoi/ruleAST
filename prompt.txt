@@ -1,0 +1,23 @@
+now i will like to start developing the client side where i will be using react
+now let me give you a rough description of stuffs that i want and u will be writing the code for me
+
+basically this os going to be a one page app
+i will be having 4 main containers
+
+container 1 : a container that will contain all the rules available in the database and each of this rule cards will have two options with them that is delete and update.
+container 2 : this container would be divided into two sections, the upper section will hold all the rules that the user have selected from my container 1 ready to be combined or eveluated and the lower section will be used to make an input of a test case and the rules that gets copied to this box should aslo be having the option to delete but not edit.
+and at the end of the box there will be the option to "run"
+container 3 : here the AST will be printed in JSON format for the combined rules or a single rule
+container 4 : this will be a small output field where output will be shown for the evaluated test case
+ 
+now the container 1 should contain two options which are "evaluate one" and "combine"
+if "evaluate one" is selected then the user will be allowed to select any one rule from container 1 and that rule will be copied to the container 2 where next we can make an input for the test case and evluate the rule against the test case
+and if the "combine" option is selected then the user will be allowed to select multiple(at least 2) rules from container 1. after the user is done picking multiple rules, he will be asked to make input of the respective operatiors (if n rules are picked then n-1 operators should be picked). 
+whenever one of this two conditions are chosen (evaluate or combine), the box one will go into a state of selection mode, where these two options "evaluate one" and "combine" will be unclickable and a new option will be shown by the name "done selection". once done selection is clicked then state of selection mode will be over and the box one will go into its normal state where "evaluate one" and "combine" options will be clickable once again.
+als when the selection process will be over, we sould be getting the AST should be printed in container 3
+
+assume the other details that you think will be fit for certain conditions
+
+
+
+
