@@ -29,6 +29,15 @@ export const createRuleController = async (req, res) => {
   }
 };
 
+export const getAllRules = async (req, res) => {
+  try {
+    const rules = await Rule.find({});
+    res.status(200).json(rules);
+  } catch (error) {
+    res.status(500).json({ message: 'Error fetching rules', error });
+  }
+};
+
 
 
 // @desc Combine rules
